@@ -1,0 +1,129 @@
+* {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: 微軟正黑體;
+  position: relative;
+}
+.container {
+  padding-bottom: 20px;
+  width: 1200px;
+  margin: 0 auto;
+  background-color: rgb(255, 255, 255);
+  align-items: center;
+}
+.row {
+  padding-bottom: 10px;
+}
+.col {
+  padding-bottom: 10px;
+}
+.navbar {
+  /* border: 1px solid red; */
+  padding-bottom: 20px;
+  margin-top: 10px;
+  z-index: 1000;
+}
+.boxbar {
+  position: fixed;
+  background-color: rgb(43, 124, 255, 0.9);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  border-bottom-right-radius: 10px;
+  /* border-radius: 20px; */
+}
+.buttonbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: baseline;
+  align-items: flex-end;
+  padding-left: 20px;
+}
+.navbar .button {
+  padding-right: 16px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  align-items: center;
+  text-align: center;
+}
+.title2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: rgb(43, 124, 255);
+  align-items: center;
+}
+.listBar .title3 {
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+}
+.boxbar .buttonbar:hover {
+  /* background-color: rgb(166, 201, 255); */
+  padding-top: 250px;
+  flex-direction: column;
+  transition: all 1s 0s linear;
+}
+.button:hover {
+  background-color: rgb(102, 246, 169);
+}
+.listBar {
+  width: 100%;
+  background-color: rgb(43, 124, 255);
+  height: 240px;
+  overflow: hidden;
+}
+.btn {
+  /* border: 1px solid #fff; */
+  /* display: inline-block; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* overflow: hidden; */
+  height: 320px;
+}
+
+.btn:before {
+  content: "";
+  width: 40px;
+  height: 400px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 200px;
+  left: -200px;
+  transform: translateX(-50%);
+  border-radius: 200px;
+  animation: wave 6s infinite linear;
+  transform: rotate(30deg);
+  opacity: 0.61;
+}
+.btn::after {
+  content: "";
+  width: 850px;
+  height: 850px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 210px;
+  left: 180px;
+  border-radius: 380px;
+  animation: wave 10s infinite linear;
+  transform: rotate(0deg);
+  opacity: 0.2;
+}
+
+@keyframes wave {
+  0% {
+    transform: translateX(-50%) rotate(30deg);
+  }
+  100% {
+    transform: translateX(-50%) rotate(360deg);
+  }
+}
