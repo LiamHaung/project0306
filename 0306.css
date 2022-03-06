@@ -4,6 +4,9 @@
   font-family: 微軟正黑體;
   position: relative;
 }
+.body {
+  background-color: rgb(43, 124, 255, 0.9);
+}
 .container {
   padding-bottom: 20px;
   width: 1200px;
@@ -126,4 +129,23 @@
   100% {
     transform: translateX(-50%) rotate(360deg);
   }
+}
+.card {
+  border: 0px solid black;
+  overflow: hidden;
+}
+.info {
+  opacity: 1;
+  top: 500px;
+  text-align: center;
+}
+
+.card:hover .cardPhoto {
+  /* background-color: #eee; */
+  opacity: 0.2;
+  /* top: -20px; */
+}
+.card:hover .info {
+  top: -150px;
+  transition: all 0.3s 0s ease-in;
 }
